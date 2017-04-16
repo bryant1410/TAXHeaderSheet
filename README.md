@@ -4,27 +4,27 @@ A spreadsheet view that have header/footer
 
 <img src="https://farm8.staticflickr.com/7360/10574026144_661661a99f.jpg" width="320" height="480" alt="TAXHeaderSheet_SC_1">
 
-##Requirements
+## Requirements
 
 iOS 6.0 or later
 
-##Dependency
+## Dependency
 
 TAXSpreadSheet 0.2.0 or later
 
-##Installation
+## Installation
 via CocoaPods
 
 ```Podfile
 pod 'TAXHeaderSheet'
 ```
 
-##Usage
+## Usage
 
 Import header
 
 ```objectivec
-#import "TAXHeaderSheet.h"
+# import "TAXHeaderSheet.h"
 ```
 
 Instantiate TAXHeaderSheet and register UICollectionViewCell or subclass for cells the same as UICollectionView.
@@ -73,9 +73,9 @@ Set DataSource and Delegate objects and implement those methods.
 ```
 You should return dequeued UICollectionViewCell subclass in ```headerSheet:cellAtRow:column:inSectionType```
 
-##Customize
+## Customize
 
-###Use custom views for separators.
+### Use custom views for separators.
 
 You can use custom UICollectionReusableView subclass for separators.
 You should register class and dequeue view from HeaderSheet.
@@ -90,7 +90,7 @@ In case of not using view, return nil.
 }
 ```
 
-###Use custom views for inter-row/column of each section.
+### Use custom views for inter-row/column of each section.
 
 You can use custom UICollectionReusableView subclass for inter-row/column by implementing delegate methods.
 You should register class and dequeue view from SpreadSheet.
@@ -108,15 +108,15 @@ In case of not using view, return nil.
 }
 ```
 
-##License
+## License
 
 MIT License
 
-##Change Log
-###0.2.0
+## Change Log
+### 0.2.0
 - [Add] Methods for inserting, moving, deleting rows/columns.
 - [Add] Methods for setting background color/view.
 
-###0.3.0
+### 0.3.0
 - [Add] Feature of scrolling in touching any section.
 - [Add] TAXHeaderSheetHorizontal/VerticalSectionType
